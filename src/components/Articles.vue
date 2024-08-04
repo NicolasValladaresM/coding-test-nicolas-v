@@ -8,8 +8,7 @@
 
     <v-data-table :items="filteredArticles" class="mt-6 mx-6"  :items-per-page-options="[
     { value: 10, title: '10' },
-    { value: 20, title: '20' },
-    { value: 30, title: '30' }
+    { value: 20, title: '20' }
   ]"
     >
         <template v-slot:default="{ items }">
