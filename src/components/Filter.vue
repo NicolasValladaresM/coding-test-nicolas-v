@@ -1,21 +1,24 @@
 <template>
     <v-row class="mt-4 mb-8 mx-2 justify-end filter">
-        <v-col class="d-flex elign-end flex-column  mt-6" cols="auto">
+        <v-col class="d-flex elign-end flex-column mt-6" cols="auto">
             <h1 class="mr-8">View All Articles?</h1>
             <p style="color:red">Some articles might not have story URLs or details.</p>
 
         </v-col>
-        <v-btn-toggle class="mt-12 pl-4 mr-4 toggle">
-            <v-btn @click="filter = true" :class="{ 'active-btn': filter }">
-                Deactivate
-                <v-icon color="white" class="pl-4">mdi-pause</v-icon>
-            </v-btn>
-            <v-btn @click="filter = false" class="ml-4">
-                Activate
-                <v-icon class="pl-4">mdi-play</v-icon>
+        <v-col class="d-flex flex-column align-center mt-6" cols="auto">
+            <v-btn-toggle class="pl-4 mr-4 toggle ">
+                <v-btn @click="filter = true" :class="{ 'active-btn': filter }">
+                    Deactivate
+                    <v-icon color="white" class="pl-4">mdi-pause</v-icon>
+                </v-btn>
+                <v-btn @click="filter = false" class="ml-4">
+                    Activate
+                    <v-icon class="pl-4">mdi-play</v-icon>
 
-            </v-btn>
-        </v-btn-toggle>
+                </v-btn>
+            </v-btn-toggle>
+
+        </v-col>
     </v-row>
 
 </template>
@@ -35,7 +38,7 @@ watch(filter, (newTilterValue) => {
 <style scoped>
 .filter {
     background-color: #0e1638;
-  
+
 }
 
 .toggle {

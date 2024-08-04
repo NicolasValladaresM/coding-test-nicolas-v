@@ -1,6 +1,6 @@
 <template>
-    <v-dialog v-model="dialogVisible" max-width="500" transition="dialog-bottom-transition">
-      <v-row class="dialog-container" >
+    <v-dialog v-model="dialogVisible" max-width="500" style="width: 100%;" transition="dialog-bottom-transition">
+      <v-row class="dialog-container justify-center align-center" >
         <v-card >
           <v-card-title class="mt-4 font-weight-bold">
             Article Details
