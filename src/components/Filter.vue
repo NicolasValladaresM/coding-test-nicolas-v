@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { ref, defineEmits, watch } from "vue"
+import { ref, watch } from "vue"
 
 const filter = ref(true)
 const emit = defineEmits(["update:filter"])
