@@ -6,10 +6,10 @@
             Article Details
           </v-card-title>
           <v-card-text v-if="article && article.story_title && article.author && article.comment_text" class="overflow-y-auto" style="max-height: 500px;">
-            <p><strong>Title:</strong> {{ article.story_title }}</p>
-            <p><strong>Author:</strong> {{ article.author }}</p>
-            <p><strong>Comments:</strong> {{ cleanCommentText(article.comment_text) }}</p>
-            <v-chip variant="elevated"
+            <p class="mt-4 mb-2"><strong>Title:</strong> {{ article.story_title }}</p>
+            <p class="mb-2"><strong>Author:</strong> {{ article.author }}</p>
+            <p class="mb-2"><strong>Comments:</strong> {{ cleanCommentText(article.comment_text) }}</p>
+            <v-chip variant="elevated" color="white"
               v-for="(tag, index) in article._tags":key="index"class="ma-2 mt-4">
               {{ cleanTag(tag) }}
             </v-chip>
