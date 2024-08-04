@@ -5,7 +5,7 @@
           <v-card-title class="mt-4 font-weight-bold">
             Article Details
           </v-card-title>
-          <v-card-text v-if="article && article.story_title && article.author && article.comment_text">
+          <v-card-text v-if="article && article.story_title && article.author && article.comment_text" class="overflow-y-auto" style="max-height: 500px;">
             <p><strong>Title:</strong> {{ article.story_title }}</p>
             <p><strong>Author:</strong> {{ article.author }}</p>
             <p><strong>Comments:</strong> {{ cleanCommentText(article.comment_text) }}</p>

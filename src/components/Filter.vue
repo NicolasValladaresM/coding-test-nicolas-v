@@ -5,16 +5,15 @@
             <p style="color:red">Some articles might not have story URLs or details.</p>
 
         </v-col>
-        <v-col class="d-flex flex-column align-center mt-6" cols="auto">
-            <v-btn-toggle class="pl-4 mr-4 toggle ">
-                <v-btn @click="filter = true" :class="{ 'active-btn': filter }">
-                    Deactivate
-                    <v-icon color="white" class="pl-4">mdi-pause</v-icon>
-                </v-btn>
-                <v-btn @click="filter = false" class="ml-4">
-                    Activate
-                    <v-icon class="pl-4">mdi-play</v-icon>
-
+        <v-col class="d-flex flex-column align-center mt-8" cols="auto">
+        <v-btn-toggle class="pl-4 mr-4 toggle">
+            <v-btn @click="filter = true" :class="{ 'active-btn': filter }">
+                Deactivate
+                <v-icon color="white" class="pl-4">mdi-pause</v-icon>
+            </v-btn>
+            <v-btn @click="filter = false" class="ml-4">
+                Activate
+                <v-icon class="pl-4">mdi-play</v-icon>
                 </v-btn>
             </v-btn-toggle>
 
@@ -24,7 +23,7 @@
 </template>
 
 <script setup>
-import { ref, defineEmits, watch } from "vue"
+import { ref, watch } from "vue"
 
 const filter = ref(true)
 const emit = defineEmits(["update:filter"])

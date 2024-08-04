@@ -45,7 +45,7 @@
                         <td>
                             <v-row
                                 :style="{
-                                    backgroundColor: isHovering ? 'grey' : 'transparent', borderRadius: '0%',
+                                    backgroundColor: isHovering ? 'grey' : 'transparent', borderRadius: '50%',
                                     width: '35px', height: '35px', display: 'flex'
                                 }" class="ml-2 justify-lg-center" >
                                 <template v-if="item.story_url">
