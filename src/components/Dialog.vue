@@ -14,7 +14,7 @@
               {{ cleanTag(tag) }}
             </v-chip>
           </v-card-text>
-          <p class="ml-4" v-else>No article information available</p>
+          <p class="mx-4" v-else>No article information available</p>
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn variant="tonal" class="mb-4"  @click="dialogVisible = false">Close</v-btn>
