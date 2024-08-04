@@ -5,7 +5,7 @@
             <p style="color:red">Some articles might not have story URLs or details.</p>
 
         </v-col>
-        <v-btn-toggle class="mt-12 pl-4 mr-4 toggle">
+        <v-btn-toggle class="mt-10 pl-4 mr-4 toggle">
             <v-btn @click="filter = true" :class="{ 'active-btn': filter }">
                 Deactivate
                 <v-icon color="white" class="pl-4">mdi-pause</v-icon>
