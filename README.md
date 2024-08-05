@@ -13,7 +13,7 @@ should include at least the title, comment text (comment_text) and tags
 
 ## 💿 Install
 
-Use the corresponding command to install the dependencies:
+To install the project dependencies, use the command corresponding to the package manager:
 
 | Package Manager                                                | Command        |
 |---------------------------------------------------------------|----------------|
@@ -22,27 +22,23 @@ Use the corresponding command to install the dependencies:
 
 ## 💡 Usage
 
-This section covers how to start the development server and build your project for production.
-
 ### Starting the Development Server
 
-To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
+To start the development server with hot-reload, run: 
 
 ```bash
 pnpm dev
 ```
+The server will be accessible at [http://localhost:3000](http://localhost:3000):
 
 
 ### Building for Production
 
-To build your project for production, use:
+To build the project for production, use:
 
 ```bash
 pnpm build
 ```
 
-Once the build process is completed, your application will be ready for deployment in a production environment.
-
-## 📑 License
-[MIT](http://opensource.org/licenses/MIT)
+Once the build process is complete, the application will be ready for deployment.
 
