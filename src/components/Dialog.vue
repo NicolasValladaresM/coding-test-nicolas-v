@@ -1,11 +1,11 @@
 <template>
     <v-dialog v-model="dialogVisible" max-width="500" style="width: 100%;" transition="dialog-bottom-transition">
       <v-row class="dialog-container justify-center align-center" >
-        <v-card >
+        <v-card>
           <v-card-title class="mt-4 font-weight-bold">
             Article Details
           </v-card-title>
-          <v-card-text v-if="article && article.story_title && article.author && article.comment_text" class="overflow-y-auto" style="max-height: 500px;">
+          <v-card-text v-if="article && article.story_title && article.author && article.comment_text" class="overflow-auto" style="max-height:50vh; overflow-x: auto;">
             <p class="mt-4 mb-2"><strong>Title:</strong> {{ article.story_title }}</p>
             <p class="mb-2"><strong>Author:</strong> {{ article.author }}</p>
             <p class="mb-2"><strong>Comments:</strong> {{ cleanCommentText(article.comment_text) }}</p>
