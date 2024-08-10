@@ -4,9 +4,9 @@
     </v-row>
 
     <v-container fluid>
-        <v-row class="justify-center" >
-            <Articles :filter="filter" @open-dialog="openDialog" /> 
-        </v-row>
+        
+        <Articles :filter="filter" @open-dialog="openDialog" /> 
+        
     </v-container>
 
     <Dialog :article="selectedArticle" :dialog="dialog" @update:dialog="dialog = $event" />

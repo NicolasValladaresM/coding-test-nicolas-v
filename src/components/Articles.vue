@@ -1,7 +1,7 @@
 <template>
     <v-data-table-server :items="paginatedArticles" :headers="headers" :items-per-page="itemsPerPage"
         :items-length="filteredArticles.length" :loading="loading" :items-per-page-options="[20, 40, 60, 80, 100]"
-        @update:items-per-page="itemsOnPage" @update:page="pageChanger" @update:options="loadArticles" class="mx-6">
+        @update:items-per-page="itemsOnPage" @update:page="pageChanger" @update:options="loadArticles">
 
         <template v-slot:item.created_at="{ item }">
             <span>{{ formatDate(item.created_at) }}</span>
