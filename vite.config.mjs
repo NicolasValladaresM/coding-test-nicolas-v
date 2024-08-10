@@ -26,9 +26,6 @@ export default defineConfig({
       },
     }),
   ],
-  define: { 'process.env': {
-    ARTICLES_API_KEY: "https://hn.algolia.com/api/v1/search_by_date?query=coding"
-  } },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

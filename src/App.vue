@@ -6,4 +6,8 @@
   </v-app>
 </template>
 
+<script setup>
+import Home from "./Views/Home.vue";
+</script>
+
 
