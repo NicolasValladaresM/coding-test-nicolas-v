@@ -4,7 +4,7 @@
     </v-row>
 
     <v-container fluid>
-        <v-row class="justify-center mx-4" >
+        <v-row class="justify-center" >
             <Articles :filter="filter" @open-dialog="openDialog" /> 
         </v-row>
     </v-container>
