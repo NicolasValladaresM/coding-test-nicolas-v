@@ -9,7 +9,7 @@
 
         <template v-slot:item.read_more="{ item }">
             <v-btn variant="tonal" @click="$emit('open-dialog', item)">
-                Details
+                {{ $t('Details') }}
             </v-btn>
         </template>
 
@@ -39,10 +39,12 @@
 import { ref, computed, watch } from "vue"
 import { getData } from "../services/getData.js"
 import { formatDate } from "../utils/utilDate.js"
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 
 const props = defineProps(['filter']);
 const articles = ref([])
-const dialog = ref(false);
 const itemsPerPage = ref(20);
 const currentPage = ref(1);
 const loading = ref(true);
@@ -89,12 +91,13 @@ watch(() => props.filter, () => {
     loadArticles();
 });
 
+
 const headers = [
-    { title: 'Title', key: 'story_title', align: 'start', width: '40%', sortable: false },
-    { title: 'Author', key: 'author', align: 'center', width: '20%', sortable: false },
-    { title: 'Creation Date', key: 'created_at', width: '20px', sortable: false },
-    { title: 'Read More', key: 'read_more', width: '10%', sortable: false },
-    { title: 'Story URL', key: 'story_url', width: '10%', sortable: false },
+    { title: t('Title'), key: 'story_title',  width: '400px', sortable: false},
+    { title: t('Author'), key: 'author', width: '200px', sortable: false },
+    { title: t('CreationDate'), key: 'created_at', width: '200px', sortable: false},
+    { title: t('ReadMore'), key: 'read_more', width: '100px', sortable: false },
+    { title: t('StoryURL'), key: 'story_url', width: '100px', sortable: false },
 ]
 
 </script>
