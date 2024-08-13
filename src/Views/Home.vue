@@ -1,16 +1,12 @@
 <template>
-    <v-row class="fill-width" >
-        <Filter v-model:filter="filter" />
-    </v-row>
-
+  
+    <Filter v-model:filter="filter" />
     <v-container fluid>
         
         <Articles :filter="filter" @open-dialog="openDialog" /> 
         
     </v-container>
-
     <Dialog :article="selectedArticle" :dialog="dialog" @update:dialog="dialog = $event" />
-
 
 </template>
 <script setup>

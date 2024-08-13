@@ -12,7 +12,9 @@ export default {
     ArticleDetails: 'Detalles del artículo',
     ArticleComments: 'Comentarios',
     Close: 'Cerrar',
-    NoArticlesInfo: 'No hay información disponible'
+    NoArticlesInfo: 'No hay información disponible',
+    Home: 'Inicio',
+    Updates: 'Actualizaciones'
 
   },
 
@@ -29,6 +31,8 @@ export default {
     ArticleDetails: 'Article Details',
     ArticleComments: 'Comments',
     Close: 'Close',
-    NoArticlesInfo: 'No activle info available'
+    NoArticlesInfo: 'No activle info available',
+    Home: 'Home',
+    Updates: 'Updates'
   }
 }

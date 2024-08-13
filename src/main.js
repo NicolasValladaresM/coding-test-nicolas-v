@@ -8,6 +8,7 @@
 import { registerPlugins } from '@/plugins'
 import utilDictionary from './utils/utilDictionary'
 import { createI18n } from 'vue-i18n'
+import router from './router'
 // Components
 import App from './App.vue'
 
@@ -25,4 +26,4 @@ const app = createApp(App)
 
 registerPlugins(app)
 
-app.use(i18n).mount('#app')
+app.use(i18n).use(router).mount('#app')
