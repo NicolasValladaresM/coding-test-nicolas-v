@@ -19,40 +19,47 @@
 </template>
 
 <script setup>
+
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@import './assets/variables.scss';
+
+
+
 
 
   nav{
-    box-sizing: border-box;
-    background-color: #0e1638;
-    border-radius: 30px;
+    
+    background-color: $nav-bg-color;
+    border-radius: $border-radius-small;
     padding: 10px 20px;
     display: flex;
     gap: 30px;
-    border: 5px solid rgb(255, 255, 255);
+    border: 5px solid $nav-border-color;
     }
 
-  nav a{
+    @mixin nav-a($bg-color){
     display: flex;
-    margin: 1px;
-    justify-content: center;
-    align-items: center;
-    background-color: 0e1638;
+    background-color: $bg-color;
     text-decoration: none;
-    color: white;
+    color: $nav-color;
     font-size: 20px;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color $transition-time ease, color $transition-time ease, transform $transition-time ease;
+
+  }
+
+  nav a{
+   @include nav-a($nav-bg-color);
   
   }
   nav a:hover{
-
-    color: rgb(255, 255, 255);
-    background-color: rgb(1, 4, 16);
-    transition: scale(1.1);
-    border-radius: 10px;
+    color: $nav-color;
+    background-color: $nav-hover-color;
+    transform: scale(1.1) ;
+    border-radius: $border-radius-large;
   }
 
 

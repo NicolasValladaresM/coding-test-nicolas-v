@@ -24,17 +24,19 @@ watch(filter, (newFilterValue) => {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@import '../assets/variables.scss';
+
+
+
 .filter {
     
-    background-color: #0e1638;
+    background-color: $filter-bg-color;
     max-width: 50%;
-    border-radius: 10px;
+    border-radius: $border-radius-small;
 
 
 }
 
-.toggle {
-    border-radius: 20px;
-}
 </style>

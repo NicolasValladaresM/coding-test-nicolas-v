@@ -62,14 +62,18 @@ const cleanTag = (tag) => {
 
 
 
-<style scoped>
+<style lang="scss" scoped>
+
+@import '@/assets/_variables.scss';
+
 .dialog-container {
-  border-radius: 16px;
+  border-radius: $border-radius-dialog;
   overflow: hidden;
 }
 
 .v-overlay--active {
   backdrop-filter: blur(2px);
-  background: rgb(0 0 0 / 0.8);
+  background: $dialog-bg-color;
+
 }
 </style>

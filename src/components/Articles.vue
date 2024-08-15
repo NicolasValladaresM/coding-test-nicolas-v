@@ -102,9 +102,12 @@ const headers = [
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+
+@import '../assets/variables.scss';
 .v-data-table {
-    background-color: #0e1638;
-    border-radius: 30px;
+    background-color: $table-bg-color;
+    border-radius: $border-radius-large
 }
 </style>
