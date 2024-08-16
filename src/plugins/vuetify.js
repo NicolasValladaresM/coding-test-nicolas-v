@@ -1,15 +1,15 @@
 // Styles
-import "@mdi/font/css/materialdesignicons.css";
-import "vuetify/styles";
+import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/styles'
 
 // Composables
-import { createVuetify } from "vuetify";
+import { createVuetify } from 'vuetify'
 
 export default createVuetify({
   theme: {
-    defaultTheme: "dark",
+    defaultTheme: 'dark'
   },
   icons: {
-    defaultSet: "mdi",
-  },
-});
+    defaultSet: 'mdi'
+  }
+})
