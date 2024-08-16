@@ -5,25 +5,25 @@
  */
 
 // Plugins
-import { registerPlugins } from '@/plugins'
-import utilDictionary from './utils/utilDictionary'
-import { createI18n } from 'vue-i18n'
-import router from './router'
+import { registerPlugins } from "@/plugins";
+import utilDictionary from "./utils/utilDictionary";
+import { createI18n } from "vue-i18n";
+import router from "./router";
 // Components
-import App from './App.vue'
+import App from "./App.vue";
 
 // Composables
-import { createApp } from 'vue'
+import { createApp } from "vue";
 
 const i18n = createI18n({
   legacy: false,
   messages: utilDictionary,
-  fallbackLocale: 'en',
-  locale: navigator.language.startsWith('es') ? 'es' : 'en'
-})
+  fallbackLocale: "en",
+  locale: navigator.language.startsWith("es") ? "es" : "en",
+});
 
-const app = createApp(App)
+const app = createApp(App);
 
-registerPlugins(app)
+registerPlugins(app);
 
-app.use(i18n).use(router).mount('#app')
+app.use(i18n).use(router).mount("#app");
