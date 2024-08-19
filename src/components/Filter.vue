@@ -1,8 +1,9 @@
 <template>
-  <v-row class="mt-4 mb-8 mr-8 justify-end filter">
+  <v-row class="mt-2 mb-2 mx-8 justify-end filter">
     <v-col class="d-flex elign-end flex-column mt-6" cols="auto">
       <h1 class="mr-8">{{ $t("FilterTitle") }}</h1>
       <p style="color: red">{{ $t("Filter") }}</p>
+      
     </v-col>
     <v-col class="d-flex flex-column align-center mt-8" cols="auto">
       <v-switch
@@ -32,7 +33,6 @@ watch(filter, (newFilterValue) => {
 
 .filter {
   background-color: $filter-bg-color;
-  max-width: 50%;
   border-radius: $border-radius-small;
 }
 </style>

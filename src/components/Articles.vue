@@ -1,5 +1,6 @@
 <template>
   <v-data-table-server
+    style="max-height: 65vh; overflow-y: auto;"
     :items="paginatedArticles"
     :headers="headers"
     :items-per-page="itemsPerPage"

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="mt-4">
+  <v-container fluid>
     <v-row class="justify-center">
       <v-col cols="auto">
         <nav class="nav">
@@ -29,23 +29,16 @@ nav {
   display: flex;
   gap: 30px;
   border: 5px solid $nav-border-color;
-}
+  overflow: hidden;
 
-@mixin nav-a($bg-color) {
-  display: flex;
-  background-color: $bg-color;
-  text-decoration: none;
-  color: $nav-color;
-  font-size: 20px;
-  font-weight: bold;
-  transition:
-    background-color $transition-time ease,
-    color $transition-time ease,
-    transform $transition-time ease;
+  @include media('mobile') {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
 nav a {
   @include nav-a($nav-bg-color);
+  
 }
 nav a:hover {
   transform: scale(1.1);

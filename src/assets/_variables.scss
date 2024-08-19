@@ -9,3 +9,40 @@ $border-radius-small: 10px;
 $border-radius-dialog: 16px;
 $table-bg-color: #0e1638;
 $dialog-bg-color: rgb(0 0 0 / 0.8);
+
+@mixin nav-a($bg-color) {
+    display: flex;
+    background-color: $bg-color;
+    text-decoration: none;
+    color: $nav-color;
+    font-size: 20px;
+    font-weight: bold;
+    transition:
+      background-color $transition-time ease,
+      color $transition-time ease,
+      transform $transition-time ease;
+  }
+
+@mixin media($breakpoint) {
+    @if $breakpoint == 'small-mobile' {
+      @media (max-width: 575px) {
+        @content;
+      }
+    } @else if $breakpoint == 'mobile' {
+      @media (max-width: 767px) {
+        @content;
+      }
+    } @else if $breakpoint == 'tablet' {
+      @media (max-width: 991px) {
+        @content;
+      }
+    }@else if $breakpoint == 'small-desktop' {
+      @media (max-width: 1199px) {
+        @content;
+      }
+    }@else if $breakpoint == 'desktop' {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
