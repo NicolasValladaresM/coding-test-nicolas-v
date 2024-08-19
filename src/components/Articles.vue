@@ -10,6 +10,7 @@
     @update:items-per-page="itemsOnPage"
     @update:page="pageChanger"
     @update:options="loadArticles"
+    fixed-header="true"
   >
     <template v-slot:item.created_at="{ item }">
       <span>{{ formatDate(item.created_at) }}</span>
@@ -131,4 +132,5 @@ const headers = [
   background-color: $table-bg-color;
   border-radius: $border-radius-large;
 }
+
 </style>
