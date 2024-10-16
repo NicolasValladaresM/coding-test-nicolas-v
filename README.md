@@ -14,7 +14,7 @@ Para instalar las dependencias, utilice el siguiente comando:
 
 ### Iniciando el servidor de desarrollo
 
-Para iniciar el servidor de desarrollo con hot-reload, ejecute:
+Para iniciar el servidor de desarrollo en hot-reload, ejecute:
 
 ```bash
 npm run dev
